@@ -7,10 +7,10 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Message {
 	
-	public long id;
-	public String messages;
-	public Date created;
-	public String author;
+	private long id;
+	private String messages;
+	private Date created;
+	private String author;
 	
 	public Message(){
 	}
@@ -22,12 +22,32 @@ public class Message {
 		this.created = new Date();
 	}
 	
-	public long getId(){
-		return id;
+	public String getMessages() {
+		return messages;
+	}
+
+	public void setMessages(String messages) {
+		this.messages = messages;
+	}
+
+	public Date getCreated() {
+		return created;
+	}
+
+	public void setCreated(Date created) {
+		this.created = created;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
 	}
 	
-	public String getMessage(){
-		return messages;
+	public long getId(){
+		return id;
 	}
 	
 	public Date getDate(){
