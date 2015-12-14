@@ -7,7 +7,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>messenger Jersey Webapp</name>
     <build>
-        <finalName>messenger </finalName>
+        <finalName>messenger</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
